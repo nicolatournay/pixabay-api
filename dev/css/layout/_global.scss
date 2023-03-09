@@ -1,0 +1,129 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+header {
+    background: url("../../img/jellyfish.jpg") center/cover;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    small {
+        position: absolute;
+        right: 1rem;
+        bottom: 1rem;
+    }
+    color: #fff;
+    [type="submit"] {
+        align-self: center;
+        border: 2px solid #fff;
+        background-color: transparent;
+        color: #fff;
+        &:hover {
+            border: none;
+            background-color: #fff;
+            color: $dark-blue;
+            font-weight: 700;
+            opacity: 0.7;
+            cursor: pointer;
+        }
+    }
+}
+
+
+a {
+    color: $light-blue;
+    text-decoration: none;
+}
+
+footer {
+    background-color: $dark-blue;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+main {
+    min-height: 65vh;
+    padding: 2rem;
+    columns: 3;
+}
+
+aside {
+    display: none;
+    background-color: $light-blue;
+    position: fixed;
+    top: 23vh;
+    padding: 1rem;
+    border-radius: 20px;
+    z-index: 10;
+    form {
+        display: block;
+    }
+    label {
+        text-transform: capitalize;
+    }
+    box-shadow: 5px 5px 15px $dark-blue;
+}
+
+[type="radio"] {
+    border: none;
+    outline: none;
+}
+
+.image {
+    position: relative;
+    a {
+        position: absolute;
+        right: 1rem;
+        top: 1rem;
+    }
+}
+
+img,
+video {
+    margin-bottom: 2rem;
+    width: 100%;
+}
+
+.container {
+    width: 600px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+form > * {
+    padding: 1rem;
+}
+
+[name="keyword"],
+[type="submit"] {
+    border-radius: 25px;
+    border: none;
+}
+
+[name="keyword"]:focus {
+    outline: none;
+}
+
+fieldset {
+    text-align: center;
+    border: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+h1 {
+    margin: 0 0 2rem;
+    text-align: center;
+    text-transform: uppercase;
+}

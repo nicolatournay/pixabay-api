@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;1,400&display=swap" rel="stylesheet">
+    <script src="js/main.js" defer async></script>
+    <title>20 images</title>
+</head>
+<body onload="jellyFish()">
+    <header>
+        <div class="container">
+            <h1>20 images</h1>
+            <form action="">
+                <input type="text" name="keyword" id="keyword" placeholder="Entrez un mot-clé" required>
+                <fieldset>
+                    <div>
+                        <input type="radio" name="media" id="photo" value="photo" required>
+                        <label for="photo">Photo</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="media" id="video" value="video">
+                        <label for="video">Video</label>
+                    </div>
+                </fieldset>
+                <input type="submit">
+            </form>
+        </div>
+        <small>Image par <a href="https://pixabay.com/fr/users/publicdomainpictures-14/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=21649">PublicDomainPictures</a> de <a href="https://pixabay.com/fr//?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=21649">Pixabay</a></small>
+
+    </header>
+    <main>
+        <aside>
+            <form action="">
+                <input type="radio" name="format" id="horizontal">
+                <label for="horizontal">horizontal</label>
+                <input type="radio" name="format" id="vertical">
+                <label for="vertical">vertical</label>
+                <input type="radio" name="format" id="all">
+                <label for="all">tout</label>
+                <input type="submit" value="Sélectionner">
+            </form>
+        </aside>
+        <section class="gallery"></section>
+    </main>
+    <footer>
+        <small>2023© | Made by <a href="">Nicola Tournay</a> with ❤</small>
+    </footer>
+    <script src="https://kit.fontawesome.com/8f9223cc2c.js" crossorigin="anonymous"></script>
+</body>
+</html>
